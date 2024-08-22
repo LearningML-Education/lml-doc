@@ -1,0 +1,8 @@
+site_name: Manual de LearningML
+nav:
+  - Índice: index.md
+  - Introducción: intro.md
+  - Novedades de LearningML v2: novedades.md
+theme: 
+  name: material
+  language: es

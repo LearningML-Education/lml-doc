@@ -1,0 +1,18 @@
+services:
+  mkdocs-doc-tecnica:
+    container_name: mkdocs-doc-tecnica
+    image: squidfunk/mkdocs-material
+    volumes:
+      - ./doc-tecnica:/docs
+    ports:
+      - 8000:8000
+  
+  mkdocs-manual:
+    container_name: mkdocs-manual
+    image: squidfunk/mkdocs-material
+    volumes:
+      - ./manual:/docs
+    ports:
+      - 8001:8000
+  
+

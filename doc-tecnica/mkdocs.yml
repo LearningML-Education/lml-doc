@@ -1,0 +1,7 @@
+site_name: Documentación LearningML
+nav:  
+  - Documentación técnica: LearningML_v2.md
+  - Actividades: Actividades.md
+theme: 
+  name: material
+  language: es
