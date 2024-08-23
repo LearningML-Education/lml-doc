@@ -1,8 +1,10 @@
 site_name: Manual de LearningML
 nav:
-  - Índice: index.md
-  - Introducción: intro.md
-  - Novedades de LearningML v2: novedades.md
+  - Introducción: 01-intro.md
+  - Descripción de la plataforma LearningML: 02-descripcion.md
+  - El editor de modelos de Machine Learning: editor-modelos.md
 theme: 
   name: material
   language: es
+markdown_extensions:
+  - footnotes
