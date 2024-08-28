@@ -238,3 +238,84 @@ Al hacer clic en el botón con la imagen del gatito de Scratch se abre, en otra 
 ![Botón Scratch](img/20-boton-scratch.png)
 
 ## El modo avanzado de LearningML+
+
+El modo avanzado de LearningML+ se activa haciendo clic en el botón de tipo interruptor "Avanzado" el cual se encuentra en el menú superior.
+
+![Activación del modo avanzado](img/19-modo-avanzado-on.png)
+
+Y se desactiva haciendo clic en el mismo botón. 
+
+Cuando se activa el modo avanzado la pantalla de construcción de modelos cambia. Los elementos de la interfaz gráfica necesarios para realizar cada fase del aprendizaje supervisado se encuentra en una pestaña. Esto provoca una mayor separación de las fases, ya que cada una ocupa toda la pantalla. Pasamos de una a otra fase haciendo clic sobre su pestaña.
+
+![Pestañas del modo avanzado](img/30-pestanas-modo-avanzado.png)
+
+En el modo avanzado las fases de entrenamiento y validación son iguales a las del modo básico. Simplemente sus elementos de interfaz gráfica ocupan más espacio en la pantalla. La diferencia relevante del modo avanzado son los controles que se añaden en la fase de aprendizaje.
+
+![Elementos de la pestaña de aprendizaje](img/31-elementos-pestana-aprendizaje.png)
+
+Se pretende con el modo avanzado que el estudiante pueda explorar con más profundidad la parte más oscura del proceso, a saber; el algoritmo de Machine Learning. Para ello se sugiere al docente que primero realice una explicación de los fundamentos y del funcionamiento de estos algoritmos. A continuación, el estudiante puede hacerse una idea más aproximada realizando ajustes sobre el algoritmo de Machine Learning.
+
+La pestaña "Aprender" presenta dos partes: 
+
+- A la izquierda la selección de algoritmo.
+- A la derecha la selección de una muestra para validar el modelo con una matriz de confusión.
+
+### Selección de algoritmo de ML
+
+En esta parte puedes elegir el algoritmo de Machine Learning que se usará para construir el modelo. Son muchos los algoritmos existentes, aunque, por lo pronto, LearningML+ sólo ofrece dos: Red Neuronal Artificial y KNN (K vecinos más próximos). 
+
+> Nota: El funcionamiento y los fundamentos de estos algoritmos caen fuera del alcance de este manual. Sugerimos el sitio web [Machine Learning Playground](https://ml-playground.com/) para iniciarse de manera práctica en el aprendizaje de estos algoritmos.
+
+**Los *hiperparámetros* del algoritmo**
+
+Cada algoritmo de Machine Learning es diferente. Cada uno de ellos se basa en sus propias estrategias para el análisis de los datos de entrenamiento y construcción del modelo. Por lo general, estos algoritmos ofrecen unos parámetros especiales, denominados hiperparámetros, con los que se puede ajustar su funcionamiento para mejorar el análisis y obtener modelos más precisos y eficaces. Cada algoritmo tiene sus propio conjunto de hiperparámetros y su ajuste óptimo depende en gran medida de la distribución de los datos de entrenamiento. Aunque existen herramientas y técnicas que pueden sistematizar parte de este proceso, la experiencia del programador suele ser un factor clave para ajustarlos correctamente. De hecho suele decirse que, tanto la elección del algoritmo como el ajuste de sus hiperparámetros son tareas artesanales.
+
+Así pues, en función del algoritmo que se haya seleccionado en el desplegable anterior los hiperparámetros mostrados serán unos u otros. 
+
+![Selección de algoritmo e hiperparámetros](img/32-seleccion-algorimo.png)
+
+Si has seleccionado el algoritmo "Red Neuronal", al finalizar el aprendizaje se mostrará una gráfica en la que se muestra la evolución del aprendizaje en término de dos cantidades típicas denominadas *accuracy* y *loss*.
+
+> Nota: Para entender qué significan estas cantidades es necesario realizar previamente un estudio de los fundamentos de las redes neuronales artificiales, lo cual cae fuera del alcance de este manual.
+
+![Evolución del aprendizaje](img/33-evolucion-aprendizaje.png)
+
+### Validación del modelo con una matriz de confusión
+
+Ya hemos visto que en la fase de evaluación presentamos nuevos datos al modelo para comprobar si funciona aceptablemente, es decir, si acierta mucho más de lo que falla. Sin embargo, presentar uno a uno los ejemplos para realizar esta comprobación puede ser bastante pesado. 
+
+Hay una manera mucho más cómoda y adecuada hacer esto. Se trata de indicarle al algoritmo de Machine Learning que reserve un porcentaje de datos de entrenamiento para la evaluación del modelo. Esto significa que de todos los datos de entrenamiento que se han aportado, un subconjunto que representa el porcentaje de validación seleccionado y que es elegido aleatoriamente por el algoritmo, NO se usará durante el proceso de aprendizaje.
+
+Cuando el modelo haya sido construido, el propio algoritmo lo validará construyendo y visualizando en pantalla una *matriz de confusión*.
+
+![Matriz de confusión](img/34-matrix-confusion.png)
+
+**¿Cómo se construye y se interpreta esta matriz?**
+
+A pesar de su confuso nombre, la construcción e interpretación de la matrix de confusión es muy sencillo.
+
+Es una tabla que muestra números con las filas y columnas etiquetadas según las clases utilizadas durante el entrenamiento. Cada celda de la tabla indica cuántos ejemplos del conjunto de validación pertenecen a la clase de la fila y fueron clasificados por el modelo como la clase de la columna.
+
+En la imagen anterior, la matriz de confusión indica que:
+
+- 3 cuadros de Monet fueron clasificados como cuadros de Monet (fila 1, columna 1)
+- nigún cuadro de Monet fue clasificado como cuadro de Picasso (fila 1, columna 2)
+- 1 cuadro de de Monet fue clasificado como un cuadro de Vangoh (fila 1, columna 3)
+- ningún cuadro de Picasso fue clasificado como cuadro de Monet (fila 2, columna 1)
+- 2 cuadros de Picasso fueron clasificados como cuadros de Picasso (fila 2, columna 2)
+- nigún cuadro de Picasso fue clasificado como cuadro de Vangoh (fila 2, columna 3)
+- nigún cuadro de Vangoh fue clasificado como cuadro de Monet (fila 3, columna 1)
+- nigún cuadro de Vangoh fue clasificado como cuadro de Picasso (fila 3, columna 2)
+- 2 cuadros de Vangoh fueron clasificados como cuadros de Vangoh (fila 3, columna 3)
+
+>Nota: el orden de las filas va de abajo a arriba y el de las columnas de izquierda a derecha
+
+Es decir, es deseable que los elementos que no son diagonales sean pequeños, idealmente cero, ya que representan fallos del modelo. Mientras que los elementos de la diagonal, al representar aciertos del modelo, deberían ser altos en comparación con los no diagonales para que el modelo sea suficientemente bueno. Así de fácil.
+
+Finalmente, si se eligue un porcentaje de ejemplos de validación mayor que cero, además de obtener la matriz de confusión, la curva de aprendizaje del algoritmo presenta también como evolucionan las cantidades *accuracy* y *loss* para los datos del conjunto de evaluación.
+
+![Evolución de la aprendizaje con datos de evaluación](img/35-evolucion-aprendizaje-2.png)
+
+
+
+
