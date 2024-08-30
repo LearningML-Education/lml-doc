@@ -2,9 +2,15 @@ site_name: Manual de LearningML
 nav:
   - Introducción: 01-intro.md
   - Descripción de la plataforma LearningML: 02-descripcion.md
-  - El editor de modelos de Machine Learning: editor-modelos.md
+  - El editor de modelos de Machine Learning: 03-editor-modelos.md
+  - El editor de programación Scratch: 04-editor-programacion.md
 theme: 
   name: material
   language: es
 markdown_extensions:
   - footnotes
+features:
+  - toc.integrate
+  - navigation.path
+extra_css:
+  - stylesheets/extra.css
