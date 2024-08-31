@@ -1,0 +1,29 @@
+.custom-index {
+    background-image: url('lml.png'); /* Ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Cambia esto según el contraste que necesites */
+    padding: 50px;
+    text-align: center;
+    min-height: 100vh;
+  }
+  
+  .custom-index ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .custom-index li {
+    margin: 10px 0;
+  }
+  
+  .custom-index a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  
+  .custom-index a:hover {
+    text-decoration: underline;
+  }
+  
