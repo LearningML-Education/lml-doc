@@ -18,7 +18,7 @@ Las técnicas de Machine Learning pueden agruparse en tres tipos:
 
 Actualmente existen otros tipos de Machine Learning. La IA Generativa es, sin lugar a duda el tipo más conocido por su explosiva aparición en los últimos años. Pero, en esencia, la clasificación anterior engloba a todos, pues o son modificaciones o utilizan una mezcla de alguno de ellos.
 
-*LearningML+* únicamente incorpora (por lo pronto[^1]), el Aprendizaje Supervisado, el cual, como reconoce [Andrew Ng](https://youtu.be/5p248yoa3oE?t=104) es el más relevante por la cantidad de aplicaciones de IA que lo usan.
+*LearningML2* únicamente incorpora (por lo pronto[^1]), el Aprendizaje Supervisado, el cual, como reconoce [Andrew Ng](https://youtu.be/5p248yoa3oE?t=104) es el más relevante por la cantidad de aplicaciones de IA que lo usan.
 
 [^1]: La intención del equipo de LearningML es continuar el desarrollo para incorporar nuevos tipos de Machine Learning.
 
@@ -30,11 +30,11 @@ El aprendizaje supervisado se produce en tres fases:
 
 3. Evaluación. El usuario prueba el modelo construido sobre un conjunto de datos similares pero distintos a los usados en la fase de entrenamiento. El objetivo es comprobar su capacidad de *generalización*. Es decir, cómo de bueno es para reconocer o clasificar ejemplos que no se utilizaron durante el aprendizaje.
 
-*LearningML+* guía al usuario a través de estas 3 fases para construir *modelos* de Machine Learning capaces de reconocer texos, imágenes o conjuntos numéricos.
+*LearningML2* guía al usuario a través de estas 3 fases para construir *modelos* de Machine Learning capaces de reconocer texos, imágenes o conjuntos numéricos.
 
 ## Pantalla de selección de tarea
 
-La primera pantalla que presenta *LearningML+* presenta 3 tarjetas que sirven para seleccionar el tipo de datos que quieres reconocer en tu modelo de Machine Learning: textos, imágenes o conjuntos numéricos. Basta con hacer clic en cualquiera de ellas para iniciar el proceso de construcción del modelo.
+La primera pantalla que presenta *LearningML2* presenta 3 tarjetas que sirven para seleccionar el tipo de datos que quieres reconocer en tu modelo de Machine Learning: textos, imágenes o conjuntos numéricos. Basta con hacer clic en cualquiera de ellas para iniciar el proceso de construcción del modelo.
 
 ![Pantalla inicial: selección de tarea](img/01-home.png)
 
@@ -80,7 +80,7 @@ De cualquiera de estas dos formas: usando el editor de textos o el navegador de 
 
 En esta fase un algoritmo de Machine Learning analizará los datos de ejemplo que has introducido en la fase de entrenamiento y construirá un modelo capaz de reconocer o clasificar textos distintos, pero similares, a los del conjunto de datos. Es lo que se denomina el poder de generalización del modelo. Ten en cuenta que este algoritmo necesita al menos dos clases y varios ejemplos en cada clase (cuantos más mejor).
 
-En el modo básico de LearningML+ (más adelante se explicará el modo avanzado), para ejecutar el algoritmo, tan solo hay que hacer clic en el botón "Aprender a reconocer textos" de la zona "Aprender".
+En el modo básico de LearningML2 (más adelante se explicará el modo avanzado), para ejecutar el algoritmo, tan solo hay que hacer clic en el botón "Aprender a reconocer textos" de la zona "Aprender".
 
 ![Aprender a reconocer textos](img/09-aprender-a-reconocer-textos.png)
 
@@ -177,7 +177,7 @@ La introducción de vectores en la fase de evaluación se hace escribiendo la re
 
 ## El menú superior
 
-LearningML+ presenta en todas sus pantallas un menú superior con el que puedes realizar las siguientes operaciones.
+LearningML2 presenta en todas sus pantallas un menú superior con el que puedes realizar las siguientes operaciones.
 
 ### Vover a la pantalla principal
 
@@ -203,7 +203,7 @@ Desde este menú puedes realizar las siguientes operaciones:
 
 - **Guardar conjunto de datos en tu ordenador**. Cuando hayas construido un conjunto de datos de entrenamiento deberías guardarlo en el disco de tu computadora usando este menú. En cualquier momento puedes restaurarlo mediante el menú anterior **Subir conjunto de datos desde tu ordenador**. El nombre del archivo guardado es el que se haya definido en el cuadro de textos a la derecha del menú "Archivo" y la extensión es `.json`. En el caso de que no se haya escrito nada en el cuadro de textos el nombre será "Untitled.sjon".
 
-- **Guardar modelo en tu ordenador**. Esta funcionalidad es una novedad de LearningML+. Al hacer clic en este menú se guardará en la carpeta de *Descargas* un fichero con el nonbre definido en el cuadro de texto (o "lml_Untitled" si no se ha definido) y la extensión `.mdl` que contiene el modelo que se ha creado en la fase de aprendizaje. Por tanto, esta operación solo puede realizarse después de completar dicha fase. Este archivo de modelo puede ser cargado en cualquier momento desde el editor de programación (Scratch) y utilizado para realizar tareas de reconocimiento del tipo de datos para el que ha sido entrenado el modelo. Lo importante es que esto se puede hacer en cualquier momento **sin necesidad de usar el editor de modelos**. En la sección dedicada al **Editor de programación** de este mismo manual volveremos sobre este punto.
+- **Guardar modelo en tu ordenador**. Esta funcionalidad es una novedad de LearningML2. Al hacer clic en este menú se guardará en la carpeta de *Descargas* un fichero con el nonbre definido en el cuadro de texto (o "lml_Untitled" si no se ha definido) y la extensión `.mdl` que contiene el modelo que se ha creado en la fase de aprendizaje. Por tanto, esta operación solo puede realizarse después de completar dicha fase. Este archivo de modelo puede ser cargado en cualquier momento desde el editor de programación (Scratch) y utilizado para realizar tareas de reconocimiento del tipo de datos para el que ha sido entrenado el modelo. Lo importante es que esto se puede hacer en cualquier momento **sin necesidad de usar el editor de modelos**. En la sección dedicada al **Editor de programación** de este mismo manual volveremos sobre este punto.
 
 ### Cuadro de texto para el nombre de los archivos
 
@@ -213,13 +213,13 @@ Aquí puedes escribir el nombre con el que quieres guardar los datos de entrenam
 
 ### Menú "Aprender LML"
 
-Desde aquí tienes acceso a este manual y a varios recursos para aprender a usar LearningML+.
+Desde aquí tienes acceso a este manual y a varios recursos para aprender a usar LearningML2.
 
 ![Menú aprender LML](img/17-aprender.png)
 
 ### Botón de activación/desactivación del modo avanzado
 
-El modo avanzado de LearningML+ se activa o desactiva haciendo clic en este botón de tipo interruptor.
+El modo avanzado de LearningML2 se activa o desactiva haciendo clic en este botón de tipo interruptor.
 
 Por defecto el modo avanzado está desactivado. El fondo del icono del interruptor se muestra vacío.
 
@@ -237,9 +237,9 @@ Al hacer clic en el botón con la imagen del gatito de Scratch se abre, en otra 
 
 ![Botón Scratch](img/20-boton-scratch.png)
 
-## El modo avanzado de LearningML+
+## El modo avanzado de LearningML2
 
-El modo avanzado de LearningML+ se activa haciendo clic en el botón de tipo interruptor "Avanzado" el cual se encuentra en el menú superior.
+El modo avanzado de LearningML2 se activa haciendo clic en el botón de tipo interruptor "Avanzado" el cual se encuentra en el menú superior.
 
 ![Activación del modo avanzado](img/19-modo-avanzado-on.png)
 
@@ -262,7 +262,7 @@ La pestaña "Aprender" presenta dos partes:
 
 ### Selección de algoritmo de ML
 
-En esta parte puedes elegir el algoritmo de Machine Learning que se usará para construir el modelo. Son muchos los algoritmos existentes, aunque, por lo pronto, LearningML+ sólo ofrece dos: Red Neuronal Artificial y KNN (K vecinos más próximos). 
+En esta parte puedes elegir el algoritmo de Machine Learning que se usará para construir el modelo. Son muchos los algoritmos existentes, aunque, por lo pronto, LearningML2 sólo ofrece dos: Red Neuronal Artificial y KNN (K vecinos más próximos). 
 
 > Nota: El funcionamiento y los fundamentos de estos algoritmos caen fuera del alcance de este manual. Sugerimos el sitio web [Machine Learning Playground](https://ml-playground.com/) para iniciarse de manera práctica en el aprendizaje de estos algoritmos.
 

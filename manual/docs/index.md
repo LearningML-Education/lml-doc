@@ -4,6 +4,6 @@ hide:
 ---
 
 <div class="custom-index">
-  <h1>Manual de LearningML+</h1>
+  <h1>Manual de LearningML2</h1>
   
 </div>

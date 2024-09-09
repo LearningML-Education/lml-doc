@@ -40,7 +40,7 @@ El uso de estos modelo puede ser organizado en 4 casos de uso que son combinable
 3. Uso del modelo de Machine Learning que viene al cargar un proyecto de *LearningML Scratch* desde un archivo `.sb3`.
 4. Creación directa de un modelo de Machine Learning con los bloques de programación de *LearningML Scratch".
 
-El primer caso de uso requiere usar *LearningML Scratch* **simultáneamente** con el editor de modelos. En los 3 últimos se puede usar *LearningML Scratch* de manera autónoma, es decir, sin necesidad de abrir el editor de modelos. Aunque no pasa nada si lo tienes abierto. Estas 3 últimas formas de usar *LearningML Scratch* es una novedad que incorpora *LearningML+*
+El primer caso de uso requiere usar *LearningML Scratch* **simultáneamente** con el editor de modelos. En los 3 últimos se puede usar *LearningML Scratch* de manera autónoma, es decir, sin necesidad de abrir el editor de modelos. Aunque no pasa nada si lo tienes abierto. Estas 3 últimas formas de usar *LearningML Scratch* es una novedad que incorpora *LearningML2*
 
 ### Caso de uso 1. El modelo vienen directamente del editor de modelos
 
@@ -103,7 +103,7 @@ En cualquier momento puedes guardar tu proyecto de *LearningML Scratch* con el m
 
 ### Caso de uso 4. Uso autónomo
 
-Este caso de uso representa una importante novedad en *LearningML+*. Se han incluido nuevos bloques de programación que hacen posible la creación de modelos de Machine Learning desde el propio editor de programación. Esto significa que se puede prescindir completamente del editor de modelos. En este caso es el propio usuario quien construye el modelo realizando las fases del Machine Learning supervisado en el propio programa de *LearningML Scratch*. 
+Este caso de uso representa una importante novedad en *LearningML2*. Se han incluido nuevos bloques de programación que hacen posible la creación de modelos de Machine Learning desde el propio editor de programación. Esto significa que se puede prescindir completamente del editor de modelos. En este caso es el propio usuario quien construye el modelo realizando las fases del Machine Learning supervisado en el propio programa de *LearningML Scratch*. 
 
 En general el flujo de construcción del modelo será el siguiente:
 
