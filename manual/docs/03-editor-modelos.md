@@ -34,7 +34,7 @@ El aprendizaje supervisado se produce en tres fases:
 
 ## Pantalla de selección de tarea
 
-La primera pantalla que presenta *LearningML2* presenta 3 tarjetas que sirven para seleccionar el tipo de datos que quieres reconocer en tu modelo de Machine Learning: textos, imágenes o conjuntos numéricos. Basta con hacer clic en cualquiera de ellas para iniciar el proceso de construcción del modelo.
+La primera pantalla que presenta *LearningML2* presenta 3 tarjetas para seleccionar el tipo de datos que quieres reconocer en tu modelo: textos, imágenes o conjuntos numéricos. Al hacer clic en cualquiera de ellas se presenta la pantalla para construir el modelo del tipo seleccionado.
 
 ![Pantalla inicial: selección de tarea](img/01-home.png)
 
