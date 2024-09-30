@@ -44,23 +44,22 @@ También presenta un menú superior que es común a toda la aplicación. Más ad
 
 ## Construcción de modelos de reconocimiento de textos
 
-Para construir un modelo de reconocimiento de textos debes hacer clic en la tarjeta "Reconocimiento de texto" de la pantalla principal. Se abrirá la pantalla de construcción de modelos con los elementos necesarios para introducir textos de ejemplo etiquetados.
+Para construir un modelo de reconocimiento de textos haz clic en la tarjeta "Reconocimiento de texto" de la pantalla principal. Se abrirá una pantalla dividida en 3 partes que se corresponden con las 3 fases del aprendizaje supervisado: entrenamiento, aprendizaje y evaluación.
 
 ![Pantalla de construcción de modelos de textos](img/03-modelo-texto.png)
 
-Esta pantalla está dividida en 3 partes que se corresponden con las 3 fases del aprendizaje supervisado: entrenamiento, aprendizaje y evaluación.
 
 ### Entrenamiento
 
-Para introducir los textos de ejemplo, primero debes crear las clases, también llamadas etiquetas. Cada clase se crea introduciendo su nombre en el cuadro de texto de la zona de "Entrenamiento" y haciendo clic en el botón "Añadir nueva clase". Se creará un contenedor en el que debes añadir los textos que pertenezcan a esa clase, esto es, que tengan esa etiqueta.
+Para introducir los textos de ejemplo, primero debes crear las clases, también llamadas etiquetas. Cada clase se crea introduciendo su nombre en el cuadro de texto de la zona de "Entrenamiento" y haciendo clic en el botón "Añadir nueva clase". Se creará un contenedor en el que debes añadir los textos que pertenezcan a esa clase.
 
 ![Agregar nueva clase](img/04-agregar-clase.png)
 
-Cada contenedor ofrece en la parte superir botones para editar el nombre de la clase y para eliminarla. Y en la parte inferior un botón para añadir textos desde el editor y otro para añadirlos desde un archivo de textos.
+Cada contenedor ofrece en la parte superior botones para editar el nombre de la clase y para eliminarla. Y en la parte inferior un botón para añadir textos desde el editor y otro para añadirlos desde un archivo de textos.
 
 ![Botones del contenedor de clase](img/05-botones-contenedor-clase.png)
 
-Al hacer clic en el botón "Añadir" se abre un editor de textos en el que puedes añadir tantos textos como quieras a la clase en cuestión. 
+Al hacer clic en el botón "Añadir" se abre un editor de textos con el que puedes añadir tantos textos como quieras a la clase en cuestión. 
 
 ![Editor de textos](img/06-editor-de-textos.png)
 
@@ -68,7 +67,7 @@ Cada nueva linea que añadas al editor será interpretada como un texto cuando h
 
 ![Textos en contenedor de clase](img/07-textos-en-contenedor-de-clase.png)
 
-Si ya dispones de un archivo de texto con los textos que quieres añadir a la clase puedes usar el botón "Cargar" del contenedor de clase. Se abrirá un navegador de ficheros con el que puedes localizar el archivo y cargarlo.
+Si ya dispones de un archivo con los textos que quieres añadir a la clase puedes usar el botón "Cargar" del contenedor de clase. Se abrirá un navegador de ficheros con el que puedes localizar el archivo y cargarlo. Ten en cuenta que el archivo debe tener formato de texto (.txt) no valen documentos de Word u otros editores con formato propio.
 
 También puedes editar los textos que has añadido usando el botón con el icono de un lápiz que aparece al lado de cada texto o borrarlo usando el botón con el icono de cubo de basura.
 
@@ -78,7 +77,7 @@ De cualquiera de estas dos formas: usando el editor de textos o el navegador de 
 
 ### Aprendizaje
 
-En esta fase un algoritmo de Machine Learning analizará los datos de ejemplo que has introducido en la fase de entrenamiento y construirá un modelo capaz de reconocer o clasificar textos distintos, pero similares, a los del conjunto de datos. Es lo que se denomina el poder de generalización del modelo. Ten en cuenta que este algoritmo necesita al menos dos clases y varios ejemplos en cada clase (cuantos más mejor).
+En esta fase un algoritmo de Machine Learning analizará los datos de ejemplo que has introducido en la fase de entrenamiento y construirá un modelo capaz de reconocer o clasificar textos distintos, pero similares, a los del conjunto de datos. Es lo que se denomina el **poder de generalización** del modelo. Ten en cuenta que este algoritmo necesita al menos dos clases y varios ejemplos en cada clase (cuantos más mejor).
 
 En el modo básico de LearningML2 (más adelante se explicará el modo avanzado), para ejecutar el algoritmo, tan solo hay que hacer clic en el botón "Aprender a reconocer textos" de la zona "Aprender".
 
@@ -92,6 +91,7 @@ Al finalizar, en la misma ventana modal, se informa del tiempo que se ha inverti
 
 ![Modelo construido](img/11-modelo-construido.png)
 
+Llegados a este punto puedes cerrar la ventana modal y continuar con las siguiente fase.
 
 ### Evaluación
 
@@ -101,13 +101,13 @@ La última fase del Machine Learning supervisado consiste en evaluar la calidad 
 
 El resultado muestra la **confianza** para cada una de las clases, esto es, la probabilidad en términos de porcentaje, de que el texto introducido pertenezca a cada una de las clases según los cálculos realizados por el modelo construido.
 
-Es importante realizar varias pruebas, cuantas más mejor. Ten en cuenta que el modelo construido NO es infalible y puede fallar en algunos casos. Si no estamos satisfechos con los resultados que arroja el modelo con los textos de prueba, puedes añadir más textos de ejemplo a las clases de la zona "Entrenar". Incluso puedes añadir nuevas clases con más textos. Una vez que lo hayas hecho, como el conjunto de datos ha cambiado, debes volver a construir el modelo, es decir, volver a hacer clic en el botón "Aprender a reconocer textos" de la zona "Aprender". Seguramente la calidad del modelo haya mejorado. Puedes comprobarlo realizando, una vez más, una fase de pruebas. Este proceso es iterativo y puedes repetirlo todas las veces que quieras hasta obtener un modelo que te satisfaga.
+Es importante realizar varias pruebas, cuantas más mejor. Ten en cuenta que el modelo construido NO es infalible y puede fallar en algunos casos. Si no estamos satisfechos con los resultados que arroja el modelo con los textos de prueba, puedes añadir más textos de ejemplo a las clases de la zona "Entrenar". Incluso puedes añadir nuevas clases con más textos. Una vez que lo hayas hecho, como el conjunto de datos ha cambiado, debes **volver a construir el modelo**, es decir, volver a hacer clic en el botón "Aprender a reconocer textos" de la zona "Aprender". Seguramente la calidad del modelo haya mejorado. Puedes comprobarlo realizando, una vez más, una fase de pruebas. Este proceso es iterativo y puedes repetirlo todas las veces que quieras hasta obtener un modelo que te satisfaga.
 
-Llegados a este punto puedes desarrollar una aplicación informática con Scratch que use el modelo de Machine Learning que acabas de construir. Pero esto se explicará más adelante en la sección dedicada al **Editor de programación** de este mismo manual.
+Ahora estás en disposición de programar una aplicación informática con Scratch que use el modelo de Machine Learning que acabas de construir. Pero esto se explicará más adelante en la sección dedicada al [**Editor de programación**](04-editor-programacion.md) de este mismo manual.
 
 ## Construcción de modelos de reconocimiento de imágenes
 
-Para construir un modelo de reconocimiento de imágenes debes hacer clic en la tarjeta "Reconocimiento de imágenes" de la pantalla principal. Se abrirá la pantalla de construcción de modelos con los elementos necesarios para introducir imágenes de ejemplo etiquetadas.
+Para construir un modelo de reconocimiento de imágenes debes hacer clic en la tarjeta "Reconocimiento de imágenes" de la pantalla principal. Se abrirá la pantalla de construcción de modelos con los elementos necesarios para introducir imágenes de ejemplo etiquetadas, realizar el aprendizaje y evaluar el modelo generado.
 
 ![Pantalla de construcción de modelos de reconocimiento de imágenes](img/21-modelo-imagenes.png)
 
@@ -123,7 +123,7 @@ Con el botón "Subir" puedes añadir imágenes (`.jpg`, `.png`, `.webp`, `.svg`)
 
 ![Subir imágenes](img/23-subir-imagenes.png)
 
-Con el botón "Cámara" se activará la cámara que tengas configurada en tu navegador y podrás añadir instantáneas tomadas con ella. Cuando se activa la cámara aparece la imagen que esté tomando en ese momento y los botones "Captura" y "Cerrar". Cada vez que hagas clic en el primero se añádirá una instantánea a la clase en cuestión.
+Con el botón "Cámara" se activará la cámara que tengas configurada en tu navegador y podrás añadir instantáneas tomadas con ella. Cuando se activa la cámara puedes usar los botones "Captura" y "Cerrar". Cada vez que hagas clic en el primero se añádirá una instantánea a la clase en cuestión. Con el segundo se desactiva la cámara.
 
 ![Captura con webcam](img/24-captura-webcam.png)
 
@@ -135,7 +135,7 @@ Al igual que en la fase de entrenamiento, en la fase de evaluación aparecen dos
 
 ## Construcción de modelos de reconocimiento de conjuntos numéricos
 
-Para construir un modelo de reconocimiento de conjuntos numéricos debes hacer clic en la tarjeta "Reconocimiento de números" de la pantalla principal. Se abrirá la pantalla de construcción de modelos con los elementos necesarios para introducir conjuntos numéricos de ejemplo etiquetados.
+Para construir un modelo de reconocimiento de conjuntos numéricos debes hacer clic en la tarjeta "Reconocimiento de números" de la pantalla principal. Se abrirá la pantalla de construcción de modelos con los elementos necesarios para introducir conjuntos numéricos de ejemplo etiquetados, ejecutar el algoritmo para aprender y evaluar el modelo creado.
 
 ![Pantalla de construcción de modelos de reconocimiento de conjuntos numéricos](img/26-modelo-numeros.png)
 
@@ -143,7 +143,7 @@ Para construir un modelo de reconocimiento de conjuntos numéricos debes hacer c
 
 Los conjuntos numéricos son datos tabulados al estilo de una hoja de cálculo. En realidad, todos los datos que son introducidos en un algoritmo de Machine Learning deben ser de este tipo. En el caso de los textos y las imágenes, un procedimiento denominado *feature extraction* (extracción de características) convierte los textos o las imágenes en conjuntos de números, y son estos últimos los que se introducen en el algoritmo de Machine Learning para construir el modelo. Se puede decir por tanto que los conjuntos numéricos son el tipo de datos natural con que trabajan las técnicas de Machine Learning.
 
-Lo mejor para comprender este tipo de datos es usar un ejemplo. Supongamos que pretendemos construir un modelo para reconocer flores que pertenecen a tres especies distintas denominadas: *iris virginica*, *iris versicolor* e *iris setosa*. Para ello, se han realizado medidas sobre la longitud del sépalo, la anchura del sépalo, la longitud del pétalo y la anchura del pétalo de 150 ejemplares distintos. Es decir, cada conjunto numérico que representa a un ejemplar consta de 4 números. Estos serían los 3 primeros ejemplares de la clase *iris-setosa*
+Lo mejor para comprender este tipo de datos es usar un ejemplo. Supongamos que pretendemos construir un modelo para reconocer flores que pertenecen a tres especies distintas denominadas: *iris virginica*, *iris versicolor* e *iris setosa*. Para ello, se han realizado medidas sobre la longitud del sépalo, la anchura del sépalo, la longitud del pétalo y la anchura del pétalo de 150 ejemplares distintos. Es decir, cada conjunto numérico representa a un ejemplar y consta de 4 números. Estos serían los 3 primeros ejemplares de la clase *iris-setosa*
 
 | longitud del sépalo | anchura del sépalo | longitud del pétalo | anchura del pétalo|
 |---------------------|--------------------|---------------------|-------------------|
@@ -151,7 +151,7 @@ Lo mejor para comprender este tipo de datos es usar un ejemplo. Supongamos que p
 | 4.9                 | 3.0                | 1.4                 | 0.2               |
 | 4.7                 | 3.2                | 1.3                 | 0.2               |
 
-Cada fila de la tabla anterior representa a un ejemplar. Y cada columna representa una característica. En este caso se han elegido 4 características de los objetos, esto es, de las flores iris, que dan lugar a un conjunto de 4 números para cada ejemplar. Técnicamente a cada uno de estos conjuntos de 4 números se le llama **vector**. Los vectores se caracterizan por su **dimensión**, que no es más que el número de elementos que componen el vector. En este caso la dimensión es **4**. Es muy importante que **todos** los vectores que se introducen como entrada del algoritmo de Machime Learning tengan la **misma** dimensión.
+Cada fila de la tabla anterior representa a un ejemplar. Y cada columna representa una característica. En este caso se han elegido 4 características de los objetos, esto es, de las flores iris, que dan lugar a un conjunto de 4 números para cada ejemplar. Técnicamente a cada uno de estos conjuntos de 4 números se le llama **vector**. Los vectores se caracterizan por su **dimensión**, que no es más que el número de elementos que tiene el vector. En este caso la dimensión es **4**. Es muy importante que **todos** los vectores que se introducen como entrada del algoritmo de Machime Learning tengan la **misma** dimensión.
 
 ### Cómo introducir vectores como datos de entrenamiento
 
@@ -171,7 +171,7 @@ Donde puedes editarlos uno a uno con el botón del icono del lápiz, o eliminarl
 
 > Importante!! Todos los vectores deben tener la misma dimensión y todos sus elementos deben ser números. En caso contrario el sistema arrojará un error.
 
-Por otro lado, el botón "Cargar" abre un navegador de archivos con el que puedes abrir un archivo CSV (Comma Separated Values), esto es, un archivo de texto que contiene lineas de texto separadas por comas. Es importante, según hemos indicado en la nota previa, que los textos representen números y cada linea tenga el mismo número de elementos (misma dimensión).
+Por otro lado, el botón "Cargar" abre un navegador de archivos con el que puedes abrir un archivo CSV (Comma Separated Values), esto es, un archivo de texto que contiene lineas de texto separadas por comas. Es importante, según hemos indicado en la nota previa, que los textos representen números y cada linea tenga el mismo número de elementos (misma dimensión). También es necesario que el fichero CSV no tenga una linea de cabecera con el nombre de las clases, solo deben aparecer las líneas con los números.
 
 La introducción de vectores en la fase de evaluación se hace escribiendo la representación CSV que acabamos de explicar en el cuadro de texto de la zona "Probar".
 
