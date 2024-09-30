@@ -2,31 +2,31 @@
 
 ## Introducción
 
-Con esta aplicación el usuario puede construir sus propios modelos de Machine Learning. Utiliza una estrategia conocida como *Machine Learning Supervisado* que implica recolectar conjuntos de ejemplos de distintas clases y etiquetarlos manualmente con la clase que les corresponda.
+El acceso al *editor de modelos* se realiza a través de la url [https://v2.learningml.org](https://v2.learningml.org). Con esta aplicación puedes construir tus propios modelos de Machine Learning. Utiliza una técnica conocida como *Aprendizaje Automático Supervisado* (*Supervised Machine Learning*) que consiste en recolectar conjuntos de ejemplos de distintas clases y etiquetarlos manualmente con la clase que les corresponda.
 
-Todas las técnicas de Machine Learning, sea cual sea su tipo, tienen como objetivo construir un *modelo* capaz de realizar algún tipo de tarea para la que se requiere algún tipo de "inteligencia" como clasificar, reconocer o generar objetos (textos, imágenes, video, música, etcétera). La característica más importante de cualquiera de estas técnicas es su **naturaleza inductiva**, pues construyen el *modelo* como resultado de un análisis estadístico de multitud de datos de ejemplo. El análisis y la consecuente construcción del *modelo* lo realiza alguno de los muchos *algoritmos* de Machine Learnig existente. En resumen, se puede concluir que cualquier técnica de Machine Learning consiste en:
+Las técnicas de [Machine Learning](https://es.wikipedia.org/wiki/Aprendizaje_autom%C3%A1tico) tienen como objetivo construir un *modelo* capaz de realizar tareas para la que se requiere algún tipo de "inteligencia" como clasificar, reconocer o generar objetos (textos, imágenes, video, música, etcétera). La característica más importante de cualquiera de estas técnicas es su **naturaleza inductiva**, pues construyen el *modelo* como resultado de un análisis estadístico de grandes cantidades de datos de ejemplo. El análisis y la consecuente construcción del *modelo* lo realiza alguno de los muchos *algoritmos* de Machine Learnig existentes. Se puede concluir que cualquier técnica de Machine Learning consiste en:
 
 > la construcción de un modelo de inteligencia artificial a partir del análisis estadístico de un conjunto de datos de ejemplo.
 
 Una vez obtenido el *modelo* se puede utilizar en una aplicación informática para resolver problemas relacionados con el tipo de tarea para la que ha sido diseñado.
 
-Las técnicas de Machine Learning pueden agruparse en tres tipos:
+Son tres los tipos de técnicas de Machine Learning:
 
 - Aprendizaje supervisado.
 - Aprendizaje no supervisado.
 - Aprendizaje por refuerzo.
 
-Actualmente existen otros tipos de Machine Learning. La IA Generativa es, sin lugar a duda el tipo más conocido por su explosiva aparición en los últimos años. Pero, en esencia, la clasificación anterior engloba a todos, pues o son modificaciones o utilizan una mezcla de alguno de ellos.
+Aunque actualmente existen otros tipos de Machine Learning, como el aprendizaje autosupervisado o semisupervisado, la clasificación anterior es suficiente pues estos nuevos tipos son enfoques híbridos o más especializados.
 
-*LearningML2* únicamente incorpora (por lo pronto[^1]), el Aprendizaje Supervisado, el cual, como reconoce [Andrew Ng](https://youtu.be/5p248yoa3oE?t=104) es el más relevante por la cantidad de aplicaciones de IA que lo usan.
+*LearningML2*, por lo pronto[^1], solo incorpora el aprendizaje supervisado, el cual, como reconoce [Andrew Ng](https://youtu.be/5p248yoa3oE?t=104) es el más relevante por la cantidad de aplicaciones de IA que lo usan.
 
 [^1]: La intención del equipo de LearningML es continuar el desarrollo para incorporar nuevos tipos de Machine Learning.
 
 El aprendizaje supervisado se produce en tres fases:
 
-1. Entrenamiento. El usuario recopila un conjunto de datos de ejemplo del tipo que se desea reconocer o clasificar y los etiqueta con la clase a la que pertenece. Se trata de un proceso manual; es el humano quien realiza y organiza estos datos.
+1. Entrenamiento. El usuario recopila un conjunto de datos de ejemplo del tipo que se desea reconocer o clasificar y los etiqueta con la clase a la que pertenece. Se trata de un proceso manual: es el humano quien realiza y organiza estos datos.
 
-2. Aprendizaje. Los datos de ejemplo debidamente organizados, que es lo mismo que decir etiquetados, se introducen como entrada de un algoritmo de Machine Learning que, previamente, ha debido se elegido por el usuario entre los muchos existentes. Durante esta fase el algoritmo realiza el análisis de los datos para encontrar patrones y generar el *modelo* de Machine Learning.
+2. Aprendizaje. Los datos de ejemplo debidamente organizados, que es lo mismo que decir etiquetados, se introducen como entrada de un algoritmo de Machine Learning que, previamente, ha elegido el usuario entre los muchos existentes. Durante esta fase el algoritmo realiza el análisis de los datos para encontrar patrones y generar el *modelo* de Machine Learning.
 
 3. Evaluación. El usuario prueba el modelo construido sobre un conjunto de datos similares pero distintos a los usados en la fase de entrenamiento. El objetivo es comprobar su capacidad de *generalización*. Es decir, cómo de bueno es para reconocer o clasificar ejemplos que no se utilizaron durante el aprendizaje.
 
