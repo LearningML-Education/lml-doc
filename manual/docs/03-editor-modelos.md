@@ -4,7 +4,7 @@
 
 El acceso al *editor de modelos* se realiza a través de la url [https://v2.learningml.org](https://v2.learningml.org). Con esta aplicación puedes construir tus propios modelos de Machine Learning. Utiliza una técnica conocida como *Aprendizaje Automático Supervisado* (*Supervised Machine Learning*) que consiste en recolectar conjuntos de ejemplos de distintas clases y etiquetarlos manualmente con la clase que les corresponda.
 
-Las técnicas de [Machine Learning](https://es.wikipedia.org/wiki/Aprendizaje_autom%C3%A1tico) tienen como objetivo construir un *modelo* capaz de realizar tareas para la que se requiere algún tipo de "inteligencia" como clasificar, reconocer o generar objetos (textos, imágenes, video, música, etcétera). La característica más importante de cualquiera de estas técnicas es su **naturaleza inductiva**, pues construyen el *modelo* como resultado de un análisis estadístico de grandes cantidades de datos de ejemplo. El análisis y la consecuente construcción del *modelo* lo realiza alguno de los muchos *algoritmos* de Machine Learnig existentes. Se puede concluir que cualquier técnica de Machine Learning consiste en:
+Las técnicas de [Machine Learning](https://es.wikipedia.org/wiki/Aprendizaje_autom%C3%A1tico) tienen como objetivo construir artefactos, denominados *modelos*, capaces de realizar tareas para la que se requiere algún tipo de "inteligencia" como clasificar, reconocer o generar objetos (textos, imágenes, video, música, etcétera). La característica más importante de cualquiera de estas técnicas es su **naturaleza inductiva**, pues el *modelo* se obtiene como resultado de un análisis estadístico de grandes cantidades de datos de ejemplo. El análisis y la consecuente construcción del *modelo* lo realiza alguno de los muchos *algoritmos* de Machine Learnig existentes. Se puede concluir que cualquier técnica de Machine Learning consiste en:
 
 > la construcción de un modelo de inteligencia artificial a partir del análisis estadístico de un conjunto de datos de ejemplo.
 
@@ -26,7 +26,7 @@ El aprendizaje supervisado se produce en tres fases:
 
 1. Entrenamiento. El usuario recopila un conjunto de datos de ejemplo del tipo que se desea reconocer o clasificar y los etiqueta con la clase a la que pertenece. Se trata de un proceso manual: es el humano quien realiza y organiza estos datos.
 
-2. Aprendizaje. Los datos de ejemplo debidamente organizados, que es lo mismo que decir etiquetados, se introducen como entrada de un algoritmo de Machine Learning que, previamente, ha elegido el usuario entre los muchos existentes. Durante esta fase el algoritmo realiza el análisis de los datos para encontrar patrones y generar el *modelo* de Machine Learning.
+2. Aprendizaje. Los datos de ejemplo debidamente organizados, que es lo mismo que decir etiquetados, se introducen como entrada de un algoritmo de Machine Learning elegido por el usuario entre los muchos existentes. Durante esta fase el algoritmo realiza el análisis de los datos para encontrar patrones y generar el *modelo* de Machine Learning.
 
 3. Evaluación. El usuario prueba el modelo construido sobre un conjunto de datos similares pero distintos a los usados en la fase de entrenamiento. El objetivo es comprobar su capacidad de *generalización*. Es decir, cómo de bueno es para reconocer o clasificar ejemplos que no se utilizaron durante el aprendizaje.
 
@@ -253,7 +253,7 @@ En el modo avanzado las fases de entrenamiento y validación son iguales a las d
 
 ![Elementos de la pestaña de aprendizaje](img/31-elementos-pestana-aprendizaje.png)
 
-Se pretende con el modo avanzado que el estudiante pueda explorar con más profundidad la parte más oscura del proceso, a saber; el algoritmo de Machine Learning. Para ello se sugiere al docente que primero realice una explicación de los fundamentos y del funcionamiento de estos algoritmos. A continuación, el estudiante puede hacerse una idea más aproximada realizando ajustes sobre el algoritmo de Machine Learning.
+Se pretende con el modo avanzado que el estudiante pueda explorar con más profundidad la parte más oscura del proceso; el algoritmo de Machine Learning. Para ello se sugiere al docente que primero realice una explicación de los fundamentos y del funcionamiento de estos algoritmos. A continuación, el estudiante puede hacerse una idea más aproximada realizando ajustes sobre el algoritmo de Machine Learning.
 
 La pestaña "Aprender" presenta dos partes: 
 
