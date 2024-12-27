@@ -63,7 +63,11 @@ Cuando se tenga una versión de desarrollo que se quiera instalar en producción
 
 3. Fusionar `main` de `lml-dev` con `devel`.
 
-4. Entrar en los proyectos `lml-editor-lit`, `lml-scratch-l10n`, `lml-scratch-vm` y `lml-scratch-gui`, fusionar con `devel` y subir a gitlab la rama `main`. Se crearán las imágenes `lml-editor` y `lml-scratch` y se actulizarán automáticamente en el servidor de LearningML.
+4. Entrar en los proyectos `lml-editor-lit`, `lml-scratch-l10n`, `lml-scratch-vm` y `lml-scratch-gui`, fusionar con `devel`.
+
+5. Revisar el `Dockerfile` de `lml-editor-lit` por si hubiera que cambiar alguna variable `ARGs`. Si se cambia, volver a hacer commit.
+
+5. Subir a gitlab la rama `main` de cada proyecto en este orden: `lml-editor-lit`, `lml-scratch-l10n`, `lml-scratch-vm`, `lml-scractch-gui` . Se crearán las imágenes `lml-editor` y `lml-scratch` y se actulizarán automáticamente en el servidor de LearningML.
 
 5. Subir la rama `main` de `lml-dev` a gitlab.
 
