@@ -2,7 +2,7 @@
     background-image: url('lml.png'); /* Ruta de tu imagen */
     background-size: cover;
     background-position: center;
-    color: white; /* Cambia esto según el contraste que necesites */
+    background-color: #00d1b2; /* Cambia esto según el contraste que necesites */
     padding: 50px;
     text-align: center;
     min-height: 100vh;
@@ -27,3 +27,22 @@
     text-decoration: underline;
   }
   
+  .md-header {
+    background-color: #00d1b2;
+    box-shadow: 0 0 .2rem #0000,0 .2rem .4rem #0000;
+    color: var(--md-primary-bg-color);
+    display: block;
+    left: 0;
+    position: sticky;
+    right: 0;
+    top: 0;
+    z-index: 4;
+  }
+
+  .md-typeset h1 {
+    color: #f5f7f6;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 0.15;
+    margin: 0 0 1.25em;
+  }

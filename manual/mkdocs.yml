@@ -7,6 +7,7 @@ nav:
 theme: 
   name: material
   language: es
+  logo: img/cabeza_genio.png
 markdown_extensions:
   - footnotes
 features:
