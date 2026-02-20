@@ -36,7 +36,10 @@ jobs:
         run: pip install --no-cache-dir mkdocs-material
 
       - name: Build manual site
-        run: mkdocs build -f manual/mkdocs.yml -d site
+        run: mkdocs build -f manual/mkdocs.yml -d manual/site
+
+      - name: Debug build output
+        run: ls -la manual/site
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -44,7 +47,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: manual/site
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
